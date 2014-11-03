@@ -11,9 +11,10 @@ backend.on('ready', function(backend) {
 
 	var incoming = backend.bus('incoming');
 	incoming.on('open', function() {
-		incoming.hook('*', function(message) {
-			console.log(message.toString());
-		});
+
+		setInterval(function() {
+			incoming.publish('test-topic', Date.now());
+		}, 1000);
 	});
 });
 
