@@ -1,4 +1,15 @@
-iot-backend
-===========
+Iot Backend
+---
 
-IoT Backend Module for Node.js
+Standard IoT backend module for Node.js
+
+Installation
+-
+Install module via NPM directly:
+```
+npm install iot-backend
+```
+
+License
+-
+MIT
