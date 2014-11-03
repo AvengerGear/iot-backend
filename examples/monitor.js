@@ -14,3 +14,7 @@ backend.on('ready', function(backend) {
 		console.log(message);
 	});
 });
+
+backend.on('error', function(err) {
+	console.log(err);
+});
