@@ -1,8 +1,9 @@
 var IoTBackend = require('../');
 
 var backend = new IoTBackend({
-	username: 'fred@avengergear.com',
-	password: 'hello'
+	host: 'localhost',
+	username: 'fred',
+	password: '123'
 });
 
 backend.on('ready', function(backend) {
@@ -16,6 +17,7 @@ backend.on('ready', function(backend) {
 			incoming.publish('test-topic', Date.now());
 		}, 1000);
 	});
+
 });
 
 backend.on('error', function(err) {
